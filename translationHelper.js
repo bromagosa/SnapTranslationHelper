@@ -41,7 +41,7 @@ sourceTree.expression.right.properties.forEach(
         if (destinationProperty) {
             each.value = destinationProperty.value;
         } else {
-            each.value.value = '';
+            each.value = recast.types.builders.literal('');
         }
     }
 );
